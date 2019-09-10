@@ -19,8 +19,11 @@
 		for ($i=0; $i <$jmlh ; $i++)
 		{ 
 			$str = random();
-			if(!in_array($str, $strs))
+			if(!in_array($str, $strs)){
 				array_push($strs,$str);
+}else{
+$i--;
+}
 		}
 		return $strs;
 	}
